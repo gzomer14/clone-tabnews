@@ -1,0 +1,8 @@
+services:
+  database:
+    image: postgres:16.0-alpine3.18
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "senha_longa"      
+    ports:
+      - "5400:5432"
